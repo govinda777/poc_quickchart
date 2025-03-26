@@ -1,10 +1,5 @@
 # poc_quickchart
 
-Claro! Aqui está um exemplo de `README.md` mostrando um tutorial simples e direto de como usar o **QuickChart** para gerar gráficos dinâmicos, com exemplos práticos e imagens:
-
----
-
-```markdown
 # 📊 Tutorial QuickChart.io
 
 [QuickChart.io](https://quickchart.io/) é uma API poderosa que permite gerar gráficos dinâmicos (como gráficos de barras, linhas, pizza, etc.) usando apenas uma URL. Isso é especialmente útil para relatórios, dashboards, bots e até mesmo READMEs de projetos no GitHub!
@@ -83,5 +78,3 @@ QuickChart é uma solução leve, prática e totalmente gratuita para gerar grá
 ```
 
 ---
-
-Se quiser, posso adaptar esse `README.md` com exemplos específicos do seu projeto também. Deseja incluir algo mais avançado como gráficos com múltiplos datasets, títulos ou legendas personalizadas?
