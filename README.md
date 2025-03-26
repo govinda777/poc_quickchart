@@ -181,7 +181,7 @@ Antes de gerar a URL, é importante saber como estruturar seus dados no formato 
 
 ### 8. Gráfico de Funil (Funnel Chart)
 
-**Fonte de dados:** `./data/funnel_data.json`
+**Fonte de dados:** `./funnel_data.json`
 
 **funnel_data.json:**
 
@@ -236,4 +236,49 @@ QuickChart é uma solução leve, prática e totalmente gratuita para gerar grá
 https://github.com/govinda777/poc_quickchart
 
 https://quickchart.io/gallery/
+
+---
+
+[... conteúdo anterior ...]
+
+---
+
+## 🔜 Próximos Passos
+
+Se você gostou do poder do QuickChart, aqui estão algumas sugestões para expandir este projeto:
+
+### 1. ✅ Automatizar a Geração de Gráficos
+- Criar um script em **Python** ou **Node.js** para:
+  - Ler dados de arquivos `.json`
+  - Gerar URLs do QuickChart automaticamente
+  - Salvar as imagens localmente (`/images/*.png`)
+  - Atualizar automaticamente o `README.md` com os gráficos
+
+### 2. 🌐 Criar uma API de suporte (chart-from-json)
+- API que:
+  - Recebe o caminho de um JSON como query param
+  - Lê os dados do repositório ou uma URL
+  - Gera dinamicamente a imagem ou redireciona para a URL do QuickChart
+- Exemplo de rota: `/chart?type=funnel&file=data/funnel_data.json`
+- Pode ser hospedado em [Render](https://render.com/), [Vercel](https://vercel.com/), [Replit](https://replit.com/)
+
+### 3. 🧪 Adicionar testes para URLs geradas
+- Validar se as URLs são válidas e se os gráficos são gerados corretamente.
+- Usar ferramentas como `requests` (Python) ou `axios` (JS) + `jest`/`pytest`.
+
+### 4. 🧱 Integrar com GitHub Actions
+- Automatizar a geração de gráficos sempre que houver alteração nos dados.
+- Exemplo:
+  - Push em `data/*.json` → Roda script → Atualiza imagens + README
+
+### 5. 📊 Explorar outros tipos de gráficos
+- Gráfico de dispersão (scatter)
+- Gráficos combinados (linha + barra)
+- Mapas de calor (heatmaps com plugins)
+- Gráficos com tooltips customizados
+
+### 6. 📝 Criar uma Wiki ou GitHub Pages
+- Publicar os gráficos em um site navegável
+- Documentar cada tipo de gráfico com seu JSON correspondente
+
 
