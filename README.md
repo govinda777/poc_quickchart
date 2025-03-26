@@ -175,6 +175,45 @@ Antes de gerar a URL, é importante saber como estruturar seus dados no formato 
 
 ---
 
+[...] 
+
+---
+
+### 8. Gráfico de Funil (Funnel Chart)
+
+**Fonte de dados:** `./data/funnel_data.json`
+
+**funnel_data.json:**
+
+```json
+{
+  "labels": ["Visitantes", "Interessados", "Propostas", "Conversões"],
+  "data": [1000, 800, 300, 80]
+}
+```
+
+**JSON para QuickChart:**
+
+```json
+{
+  "type": "funnel",
+  "data": {
+    "labels": ["Visitantes", "Interessados", "Propostas", "Conversões"],
+    "datasets": [
+      {
+        "label": "Pipeline de Vendas",
+        "data": [1000, 800, 300, 80]
+      }
+    ]
+  }
+}
+```
+
+**Resultado:**
+
+![Gráfico de Funil](https://quickchart.io/chart?c=%7B%22type%22%3A%22funnel%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Visitantes%22%2C%22Interessados%22%2C%22Propostas%22%2C%22Convers%C3%B5es%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Pipeline%20de%20Vendas%22%2C%22data%22%3A%5B1000%2C800%2C300%2C80%5D%7D%5D%7D%7D)
+
+
 ## 🧰 Dicas Úteis
 
 - **QuickChart Editor:** Utilize o [QuickChart Editor](https://quickchart.io/chart-maker/) para construir e testar seus gráficos de forma interativa.
