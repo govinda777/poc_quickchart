@@ -1,7 +1,3 @@
-A seguir, você encontrará uma versão aprimorada do tutorial, com ênfase na representação dos dados em JSON. Confira:
-
----
-
 # poc_quickchart
 
 # 📊 Tutorial QuickChart.io
