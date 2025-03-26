@@ -1,0 +1,12 @@
+{
+  "type": "funnel",
+  "data": {
+    "labels": ["Visitantes", "Interessados", "Propostas", "Conversões"],
+    "datasets": [
+      {
+        "label": "Pipeline de Vendas",
+        "data": [1000, 800, 300, 80]
+      }
+    ]
+  }
+}
