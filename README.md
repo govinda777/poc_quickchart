@@ -12,9 +12,7 @@ A ideia central é construir uma URL que contenha uma configuração baseada no 
 
 **Formato da URL:**
 
-```
 https://quickchart.io/chart?c=<configuração-em-JSON-codificada>
-```
 
 > **Dica:** Após criar seu JSON de configuração, utilize uma ferramenta de codificação de URL (como [urlencoder.io](https://www.urlencoder.org/)) para transformar o JSON em uma string adequada para a URL.
 
@@ -43,18 +41,6 @@ Antes de gerar a URL, é importante saber como estruturar seus dados no formato 
 }
 ```
 
-**URL Codificada:**
-
-```
-https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Janeiro%22%2C%22Fevereiro%22%2C%22Mar%C3%A7o%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Vendas%22%2C%22data%22%3A%5B10%2C20%2C30%5D%7D%5D%7D%7D
-```
-
-**Markdown para Exibição:**
-
-```markdown
-![Gráfico de Barras](https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Janeiro%22%2C%22Fevereiro%22%2C%22Mar%C3%A7o%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Vendas%22%2C%22data%22%3A%5B10%2C20%2C30%5D%7D%5D%7D%7D)
-```
-
 **Resultado:**
 
 ![Gráfico de Barras](https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Janeiro%22%2C%22Fevereiro%22%2C%22Mar%C3%A7o%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Vendas%22%2C%22data%22%3A%5B10%2C20%2C30%5D%7D%5D%7D%7D)
@@ -78,18 +64,6 @@ https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22lab
     ]
   }
 }
-```
-
-**URL Codificada:**
-
-```
-https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Segunda%22%2C%22Ter%C3%A7a%22%2C%22Quarta%22%2C%22Quinta%22%2C%22Sexta%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Temperatura%22%2C%22data%22%3A%5B22%2C21%2C23%2C24%2C22%5D%7D%5D%7D%7D
-```
-
-**Markdown para Exibição:**
-
-```markdown
-![Gráfico de Linhas](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Segunda%22%2C%22Ter%C3%A7a%22%2C%22Quarta%22%2C%22Quinta%22%2C%22Sexta%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Temperatura%22%2C%22data%22%3A%5B22%2C21%2C23%2C24%2C22%5D%7D%5D%7D%7D)
 ```
 
 **Resultado:**
@@ -116,21 +90,88 @@ https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22la
 }
 ```
 
-**URL Codificada:**
+**Resultado:**
 
-```
-https://quickchart.io/chart?c=%7B%22type%22%3A%22pie%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Azul%22%2C%22Vermelho%22%2C%22Amarelo%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B300%2C50%2C100%5D%7D%5D%7D%7D
-```
-
-**Markdown para Exibição:**
-
-```markdown
 ![Gráfico de Pizza](https://quickchart.io/chart?c=%7B%22type%22%3A%22pie%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Azul%22%2C%22Vermelho%22%2C%22Amarelo%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B300%2C50%2C100%5D%7D%5D%7D%7D)
+
+---
+
+### 4. Gráfico Radar
+
+**JSON:**
+
+```json
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Força", "Velocidade", "Resistência", "Inteligência", "Magia"],
+    "datasets": [
+      {
+        "label": "Jogador A",
+        "data": [65, 59, 90, 81, 56]
+      },
+      {
+        "label": "Jogador B",
+        "data": [28, 48, 40, 19, 96]
+      }
+    ]
+  }
+}
 ```
 
 **Resultado:**
 
-![Gráfico de Pizza](https://quickchart.io/chart?c=%7B%22type%22%3A%22pie%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Azul%22%2C%22Vermelho%22%2C%22Amarelo%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B300%2C50%2C100%5D%7D%5D%7D%7D)
+![Gráfico Radar](https://quickchart.io/chart?c=%7B%22type%22%3A%22radar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22For%C3%A7a%22%2C%22Velocidade%22%2C%22Resist%C3%AAncia%22%2C%22Intelig%C3%AAncia%22%2C%22Magia%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Jogador%20A%22%2C%22data%22%3A%5B65%2C59%2C90%2C81%2C56%5D%7D%2C%7B%22label%22%3A%22Jogador%20B%22%2C%22data%22%3A%5B28%2C48%2C40%2C19%2C96%5D%7D%5D%7D%7D)
+
+---
+
+### 5. Gráfico de Linha com Título e Legenda
+
+**JSON:**
+
+```json
+{
+  "type": "line",
+  "data": {
+    "labels": ["Jan", "Fev", "Mar", "Abr", "Mai"],
+    "datasets": [
+      {
+        "label": "Lucro",
+        "data": [100, 200, 150, 300, 250]
+      }
+    ]
+  },
+  "options": {
+    "title": {
+      "display": true,
+      "text": "Lucro Mensal"
+    },
+    "legend": {
+      "position": "bottom"
+    }
+  }
+}
+```
+
+**Resultado:**
+
+![Gráfico com Título e Legenda](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Jan%22%2C%22Fev%22%2C%22Mar%22%2C%22Abr%22%2C%22Mai%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Lucro%22%2C%22data%22%3A%5B100%2C200%2C150%2C300%2C250%5D%7D%5D%7D%2C%22options%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Lucro%20Mensal%22%7D%2C%22legend%22%3A%7B%22position%22%3A%22bottom%22%7D%7D%7D)
+
+---
+
+### 6. Gauge Chart (Velocímetro)
+
+**Resultado:**
+
+![Gauge Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22datasets%22%3A%5B%7B%22data%22%3A%5B60%2C40%5D%2C%22backgroundColor%22%3A%5B%22green%22%2C%22lightgray%22%5D%2C%22borderWidth%22%3A0%7D%5D%7D%2C%22options%22%3A%7B%22rotation%22%3A1*Math.PI%2C%22circumference%22%3AMath.PI%2C%22cutoutPercentage%22%3A80%2C%22plugins%22%3A%7B%22datalabels%22%3A%7B%22display%22%3Afalse%7D%7D%7D%7D)
+
+---
+
+### 7. Gráfico Horizontal
+
+**Resultado:**
+
+![Gráfico Horizontal](https://quickchart.io/chart?c=%7B%22type%22%3A%22horizontalBar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Produto%20A%22%2C%22Produto%20B%22%2C%22Produto%20C%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Vendas%22%2C%22data%22%3A%5B30%2C60%2C90%5D%7D%5D%7D%7D)
 
 ---
 
@@ -150,3 +191,10 @@ QuickChart é uma solução leve, prática e totalmente gratuita para gerar grá
 ---
 
 📎 **Documentação Completa:** [https://quickchart.io/documentation/](https://quickchart.io/documentation/)
+
+---
+
+https://github.com/govinda777/poc_quickchart
+
+https://quickchart.io/gallery/
+
