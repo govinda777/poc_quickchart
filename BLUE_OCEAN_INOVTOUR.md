@@ -1,6 +1,6 @@
 # 🌊 Estratégia Blue Ocean para ExpenseChain
 
-Si
+Site: https://www.inovtour.com/
 
 A Estratégia Blue Ocean, desenvolvida por W. Chan Kim e Renée Mauborgne, propõe que as empresas criem novos espaços de mercado inexplorados ("oceanos azuis") em vez de competir em mercados saturados ("oceanos vermelhos"). Este estudo de caso apresenta como a ExpenseChain pode revolucionar o setor de gerenciamento de despesas corporativas através da tecnologia blockchain, criando um oceano azul de oportunidades em um mercado tradicionalmente dominado por soluções centralizadas e burocráticas.
 
